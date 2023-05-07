@@ -17,6 +17,14 @@ export const getAllProductApi = async () => {
   return respone.data;
 };
 
+export const getProductByNameAPi = async (name) => {
+  const respone = await axios({
+    method: "GET",
+    url: `http://localhost:9000/api/v1/product/search?name=${name}`,
+  });
+  return respone.data;
+};
+
 export const getDetailProductApi = async (id) => {
   const respone = await axios({
     method: "GET",

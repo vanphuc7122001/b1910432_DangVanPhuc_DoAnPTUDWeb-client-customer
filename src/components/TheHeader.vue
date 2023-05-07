@@ -23,10 +23,10 @@
               </div>
         </div> <!-- col end.// -->
         <div class="col-lg-5 col-md-12 col-12">
-          <form action="#" class="">
+          <form @submit.prevent>
                   <div class="input-group">
-                    <input type="search" class="form-control" style="width:55%" placeholder="Search">
-                    <button class="btn btn-primary">
+                    <input type="search" class="form-control" style="width:55%" placeholder="Search" v-model="search">
+                    <button class="btn btn-primary" @click="handleSearch">
                       <i class="fa fa-search"></i>  
                     </button>
                   </div> <!-- input-group end.// -->
@@ -70,6 +70,7 @@
 export default {
   data(){
     return {
+      search: "",
       token : null,
       isLogin: true,
       isLogout: false
@@ -81,6 +82,14 @@ export default {
       localStorage.removeItem("token");
       localStorage.removeItem("id");
       this.$router.push('/')
+    },
+    handleSearch(){
+      this.$router.push({
+        path: '/search',
+        query: {
+          q: this.search
+        }
+      })
     }
   },
   created(){

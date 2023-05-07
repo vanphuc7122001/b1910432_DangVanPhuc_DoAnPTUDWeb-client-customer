@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import ProductList from "../components/ProductList.vue";
+import ProductList from "../pages/ProductList.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,11 +12,20 @@ const router = createRouter({
     {
       path: "/login",
       name: "login",
-      component: () => import("../components/Login.vue"),
+      component: () => import("../pages/Login.vue"),
     },
     {
       path: "/signup",
-      component: () => import("../components/Signup.vue"),
+      component: () => import("../pages/Signup.vue"),
+    },
+    {
+      path: "/search",
+      name: "search",
+      component: () => import("../pages/FindProduct.vue"),
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      component: () => import("../pages/NotFound.vue"),
     },
   ],
 });

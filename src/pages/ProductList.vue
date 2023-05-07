@@ -43,7 +43,7 @@
             <div class="card-body">
               <h5 class="text-white">Công ngệ mới</h5>
               <p class="text-white-50">Nhửng tin tức công nghệ hot </p>
-              <a class="btn btn-outline-light btn-sm" href="#">Learn more</a>
+              <a class="btn btn-outline-light btn-sm" href="#">Xem thêm</a>
             </div>
           </article>
         </div>
@@ -122,7 +122,7 @@
 <script>
 import { createNamespacedHelpers } from 'vuex'
 const { mapState,mapActions } = createNamespacedHelpers('product')
-import ProductItem from './ProductItem.vue';
+import ProductItem from '../components/ProductItem.vue';
 
 
 export default {

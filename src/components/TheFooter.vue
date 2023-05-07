@@ -29,14 +29,14 @@
           </aside>
 
           <aside class="col-12 col-sm-12 col-lg-3">
-            <h6 class="title">Newsletter</h6>
-            <p>Stay in touch with latest updates about our products and offers </p>
+            <h6 class="title">Phản hồi</h6>
+            <p>Phản hồi từ khách hàng</p>
     
             <form class="mb-3">
               <div class="input-group">
                 <input class="form-control" type="text" placeholder="Email">
                 <button class="btn btn-light" type="submit">
-                  Join
+                  P
                 </button>
               </div> <!-- input-group.// -->
             </form>
@@ -53,14 +53,9 @@
         </div>
         <nav class="dropup">
             <button class="dropdown-toggle btn d-flex align-items-center py-0" type="button" data-bs-toggle="dropdown">
-              <img src="../assets/images/flag-usa.webp" class="me-2" height="20"> 
-              <span>English</span>
+              <!-- <img src="../assets/images/flag-usa.webp" class="me-2" height="20">  -->
+              <span class="text-white">VietNam</span>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Russian</a></li>
-              <li><a class="dropdown-item" href="#">Arabic</a></li>
-              <li><a class="dropdown-item" href="#">Spanish</a></li>
-            </ul>
         </nav>
         
       </section>

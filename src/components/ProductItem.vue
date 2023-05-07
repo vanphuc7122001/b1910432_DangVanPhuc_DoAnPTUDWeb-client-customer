@@ -1,6 +1,6 @@
 <template>
     <button class="img-wrap" @click="handleOpenModal">
-        <span class="topbar"> <b class="badge bg-success"> Offer </b> </span>
+        <!-- <span class="topbar"> <b class="badge bg-success"> Offer </b> </span> -->
         <img :src="productItem.image" />
     </button>
     <figcaption class="info-wrap border-top">
@@ -63,6 +63,7 @@ export default {
 
     }
   }
+  
 };
 </script>
 

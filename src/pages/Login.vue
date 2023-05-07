@@ -42,7 +42,6 @@ export default {
       localStorage.setItem('id', res.id)
       if(res.success) {
         alert('Login successful')
-        location.reload()
         this.$router.push("/");
       }else{
         alert('Login failed')

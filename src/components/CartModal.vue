@@ -63,6 +63,7 @@ export default {
      }
 
   },
+
   methods: {
     handleDeleteCart(id){
       this.productList = this.productList.filter ( (product) => product._id !== id)
@@ -74,7 +75,8 @@ export default {
         owner: id,
         products: [
           ...this.productList
-        ]
+        ],
+        totalPrice: this.sumMoney
       }
       const res = await this.handleOrderProduct(product)
       console.log(res);
